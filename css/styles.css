@@ -13,3 +13,24 @@ html, body {
   height: 100%;
   font-family: 'Lato', sans-serif;
 }
+
+/* Top bar */
+.top-bar {
+  width: 100%;
+  padding: 1.4em 1.5em .7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.button img {
+  opacity: .5;
+}
+/* Top bar */
