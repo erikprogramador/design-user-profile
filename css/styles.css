@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -9,28 +9,123 @@
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
+  background-color: #E1E0E2;
   font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  --white: #FFFEFF;
+  --gray: #807F80;
+  --light-gray: #dadada;
+  --blue: #1881C4;
 }
+
+/* Helpers */
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-acenter {
+  align-items: center;
+}
+.flex-jcenter {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+/* Helpers */
 
 /* Top bar */
 .top-bar {
-  width: 100%;
-  padding: 1.4em 1.5em .7em;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  left: 0;
+  padding: 1.4em 1.5em .7em;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .button {
-  border: none;
   background-color: transparent;
-  outline: none;
+  border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .button img {
   opacity: .5;
 }
 /* Top bar */
+
+/* User Info */
+.info {
+  width: 100%;
+  background-color: var(--white);
+  padding: 5em 0 2em;
+}
+
+.user {
+  margin-bottom: 2em;
+}
+
+.user-image-container {
+  overflow: hidden;
+  border: 1px solid var(--light-gray);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+.name {
+  margin: 1em 0 .3em;
+}
+
+.team {
+  color: var(--gray);
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-tag {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: .2em .4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: .3em;
+}
+
+.status-info {
+  text-align: center;
+  padding: 0 1.8em;
+  border-right: 1px solid var(--light-gray);
+  font-size: 1.2rem;
+}
+
+.status-info:last-child {
+  border-right: none;
+}
+
+.status-label {
+  color: var(--gray);
+  font-size: .8rem;
+}
+/* User Info */
