@@ -39,10 +39,12 @@ html, body {
 .flex-between {
   justify-content: space-between;
 }
+.flex-around {
+  justify-content: space-around;
+}
 .flex-jend {
   justify-content: flex-end;
 }
-
 .flex-aend {
   align-items: flex-end;
 }
@@ -202,3 +204,33 @@ html, body {
   z-index: 1;
 }
 /* Team Row */
+
+/* Post */
+.post {
+  width: 100%;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.post-description {
+  color: var(--gray);
+  font-size: .8rem;
+}
+
+.time {
+  font-weight: bold;
+  font-size: .7rem;
+  color: var(--gray);
+}
+
+.cta-container {
+  margin-top: .3em;
+  width: 100%;
+}
+
+.cta {
+  width: 100%;
+  padding: 1em .5em .5em;
+  color: var(--blue);
+}
+/* Post */
