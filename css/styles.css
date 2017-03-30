@@ -50,6 +50,71 @@ html, body {
 }
 /* Helpers */
 
+/* Navigation */
+.navigation-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  transform: translateX(-100%);
+  z-index: 99999;
+}
+
+.navigation-shadow-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navigation {
+  width: 90%;
+  max-width: 380px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--white);
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.navigation-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.navigation-user {
+  margin: 2.5em 0 2em;
+}
+
+.links {
+  width: 100%;
+  height: 100;
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.link {
+  width: 100%;
+}
+.anchor {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid var(--light-gray);
+  outline: none;
+  text-decoration: none;
+  color: var(--gray);
+}
+/* Navigation */
+
 /* Top bar */
 .top-bar {
   align-items: center;
