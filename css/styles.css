@@ -9,14 +9,14 @@
 }
 
 html, body {
+  --blue: #1881C4;
+  --gray: #807F80;
+  --light-gray: #dadada;
+  --white: #FFFEFF;
   background-color: #E1E0E2;
   font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
-  --white: #FFFEFF;
-  --gray: #807F80;
-  --light-gray: #dadada;
-  --blue: #1881C4;
 }
 
 /* Helpers */
@@ -52,35 +52,35 @@ html, body {
 
 /* Navigation */
 .navigation-shadow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: rgba(0, 0, 0, .6);
+  bottom: 0;
+  left: 0;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
   pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 200ms ease-in-out;
   z-index: 99999;
 }
 
 .navigation-shadow-visible {
   opacity: 1;
-  transform: translateX(0);
   pointer-events: auto;
+  transform: translateX(0);
 }
 
 .navigation {
-  width: 90%;
+  background-color: var(--white);
+  bottom: 0;
+  left: 0;
   max-width: 380px;
+  opacity: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: var(--white);
-  opacity: 0;
   transform: translateX(-100%);
   transition: opacity 400ms ease-in-out, transform 300ms ease-in-out;
+  width: 90%;
 }
 
 .navigation-visible {
@@ -89,9 +89,9 @@ html, body {
 }
 
 .close {
+  left: 15px;
   position: absolute;
   top: 15px;
-  left: 15px;
 }
 
 .navigation-user {
@@ -99,22 +99,24 @@ html, body {
 }
 
 .links {
-  width: 100%;
   height: 100;
   list-style: none;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 }
+
 .link {
   width: 100%;
 }
+
 .anchor {
-  display: block;
-  padding: 1em;
   border-bottom: 1px solid var(--light-gray);
-  outline: none;
-  text-decoration: none;
   color: var(--gray);
+  display: block;
+  outline: none;
+  padding: 1em;
+  text-decoration: none;
 }
 /* Navigation */
 
@@ -144,9 +146,9 @@ html, body {
 
 /* User Info */
 .info {
-  width: 100%;
   background-color: var(--white);
   padding: 5em 0 2em;
+  width: 100%;
 }
 
 .user {
@@ -154,31 +156,31 @@ html, body {
 }
 
 .user-image-container {
-  overflow: hidden;
-  background-color: var(--white);
-  border: 1px solid var(--light-gray);
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  display: flex;
   align-items: center;
+  background-color: var(--white);
+  border-radius: 100%;
+  border: 1px solid var(--light-gray);
+  display: flex;
+  height: 100px;
   justify-content: center;
+  overflow: hidden;
+  width: 100px;
 }
 
 .user-image {
-  width: 90px;
-  height: 90px;
   border-radius: 100%;
+  height: 90px;
+  width: 90px;
 }
 
 .user-image-container-min {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .user-image-min {
-  width: 40px;
   height: 40px;
+  width: 40px;
 }
 
 .name {
@@ -186,29 +188,29 @@ html, body {
 }
 
 .team {
-  color: var(--gray);
-  font-size: .9rem;
-  display: flex;
   align-items: center;
+  color: var(--gray);
+  display: flex;
+  font-size: .9rem;
   justify-content: center;
 }
 
 .team-tag {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: .2em .4em;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: var(--blue);
   border-radius: 4px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
   margin-right: .3em;
+  padding: .2em .4em;
 }
 
 .status-info {
-  text-align: center;
-  padding: 0 1.8em;
   border-right: 1px solid var(--light-gray);
   font-size: 1.2rem;
+  padding: 0 1.8em;
+  text-align: center;
 }
 
 .status-info:last-child {
@@ -224,16 +226,16 @@ html, body {
 /* Card */
 .card {
   background-color: var(--white);
-  width: 90%;
-  max-width: 400px;
-  margin: 1.5em auto;
-  padding: .9em;
   border-radius: 4px;
+  margin: 1.5em auto;
+  max-width: 400px;
+  padding: .9em;
+  width: 90%;
 }
 
 .card-header {
-  margin-bottom: 1em;
   color: var(--gray);
+  margin-bottom: 1em;
 }
 
 .card-title {
@@ -241,8 +243,8 @@ html, body {
 }
 
 .card-action {
-  font-weight: bold;
   color: var(--gray);
+  font-weight: bold;
 }
 /* Card */
 
@@ -275,9 +277,9 @@ html, body {
 
 /* Post */
 .post {
-  width: 100%;
-  padding: 1em 0;
   border-bottom: 1px solid var(--light-gray);
+  padding: 1em 0;
+  width: 100%;
 }
 
 .post-description {
@@ -286,9 +288,9 @@ html, body {
 }
 
 .time {
-  font-weight: bold;
-  font-size: .7rem;
   color: var(--gray);
+  font-size: .7rem;
+  font-weight: bold;
 }
 
 .cta-container {
@@ -297,8 +299,8 @@ html, body {
 }
 
 .cta {
-  width: 100%;
-  padding: 1em .5em .5em;
   color: var(--blue);
+  padding: 1em .5em .5em;
+  width: 100%;
 }
 /* Post */
